@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Merriweather:wght@300;400;700&display=swap');
+
+body {
+    background-color: #2c2416;
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    color: #3a2e27;
+}
+
+.container {
+    background-color: #fdf6ec;
+    width: 960px;
+    margin: auto;
+    box-shadow: 0 0 30px rgba(0,0,0,0.4);
+}
+
+header, footer {
+    background-color: #3b2f1e;
+    padding: 24px 36px;
+    color: #f5e6cc;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8em;
+    margin: 0;
+    color: #f5e6cc;
+    letter-spacing: 2px;
+}
+
+/* === NAVEGAÇÃO === */
+nav {
+    background-color: #5c4530;
+    padding: 12px 36px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 28px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+a:hover {
+    color: #e8b86d;
+}
+
+a {
+    text-decoration: none;
+    color: #c49a5a;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+
+/* === SECTION === */
+section {
+    padding: 28px 36px;
+}
+
+section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4em;
+    color: #3b2f1e;
+    border-bottom: 2px solid #c49a5a;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+}
+
+section p {
+    line-height: 1.9;
+    font-size: 0.95em;
+    color: #4a3b2a;
+}
+
+section ol {
+    line-height: 2;
+    color: #4a3b2a;
+}
+
+/* === IMAGEM PRINCIPAL - seletor de id === */
+#imagem-principal {
+    width: 960px;
+    display: block;
+}
+
+/* === FOOTER === */
+footer p {
+    margin: 4px 0;
+    font-size: 0.85em;
+    color: #c9b49a;
+}
+
+
+
+/* Seletor de tag para inputs e textarea */
+input[type="text"],
+input[type="tel"],
+textarea {
+    width: 94%;
+    padding: 12px 14px;
+    margin: 8px 0 18px 0;
+    border: 1px solid #c49a5a;
+    border-bottom: 2px solid #3b2f1e;
+    background-color: #fdf6ec;
+    font-family: 'Merriweather', serif;
+    font-size: 0.9em;
+    color: #3a2e27;
+    outline: none;
+}
+
+/* Evento focus: destaque ao clicar no campo */
+input[type="text"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    background-color: #f0e0c0;
+    border-color: #e8b86d;
+}
+
+fieldset {
+    border: 1px solid #c49a5a;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #3b2f1e;
+    padding: 0 8px;
+}
+
+label {
+    font-size: 0.9em;
+    color: #5c4530;
+    font-weight: 700;
+}
+
+textarea {
+    height: 140px;
+    resize: vertical;
+}
+
+
+/* Seletor para a tag table */
+table {
+    text-align: center;
+    border-collapse: collapse; /* borda não dupla */
+    width: 400px;
+    margin: auto;
+}
+
+table th {
+    background-color: #3b2f1e;
+    color: #f5e6cc;
+    padding: 12px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Seletor para as células da tabela */
+table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Seletor aninhado para imagem dentro da tabela */
+table td img {
+    border-radius: 25px;
+    width: 100%;
+}
+
+/* Seletor de linha com evento hover */
+table tr:hover {
+    background-color: #f0e0c0;
+}
+
+/* Coluna de produto com largura fixa para imagem */
+table td:first-child {
+    width: 80px;
+}
